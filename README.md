@@ -1,5 +1,4 @@
-# Unsupervised Deep Learning for Massive MIMO Hybrid Beamforming
-
+# Limited-Fronthaul Cell-Free Hybrid Beamforming with Distributed Neural Networks
 
 In this repository you can find the simulation source code of: "Limited-Fronthaul Cell-Free Hybrid Beamforming with Distributed Neural Networks".
 
