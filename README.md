@@ -18,7 +18,7 @@ A realistic ray-tracing channel model is considered to evaluate the proposed sol
 
 
 ## Dataset
-**dataSet_withRSSI_32SSB_Ser.npy:** is the dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna users. You can find it [here](https://drive.google.com/drive/folders/1I07LB--sRGPCgWl6Ci_VeveKSzeeQyKK).
+The dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna users. We consider BS number 4,5,8,9 is active and other information is in the paper. The dataset name should be "dataSet_130.npy".
 
 It is the core dataset with 1e6 samples. It consist of RSSI, channel.
 
