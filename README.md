@@ -18,7 +18,7 @@ A realistic ray-tracing channel model is considered to evaluate the proposed sol
 
 
 ## Dataset
-**DataBase_dataSet64x8x4_130dB_0129201820.npy:** core dataset for "limited area" scenario consist of CSI, RSSI, near optimal HSHO solutions. You can find it [here](https://drive.google.com/drive/folders/1I07LB--sRGPCgWl6Ci_VeveKSzeeQyKK).
+**dataSet_withRSSI_32SSB_Ser.npy:** is the dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna users. You can find it [here](https://drive.google.com/drive/folders/1I07LB--sRGPCgWl6Ci_VeveKSzeeQyKK).
 
 It is the core dataset with 1e6 samples. It consist of RSSI, channel.
 
