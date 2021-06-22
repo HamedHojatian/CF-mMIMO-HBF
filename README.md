@@ -18,7 +18,7 @@ A realistic ray-tracing channel model is considered to evaluate the proposed sol
 
 
 ## Dataset
-**DataBase_dataSet64x8x4_130dB_0129201820.npy:** core dataset for "limited area" scenario consist of CSI, RSSI, near optimal HSHO solutions. You can find it [here](https://drive.google.com/file/d/1iXR4Zv6kBsp6NUw2bdWSGgBa6uudMKbc/view?usp=sharing).
+**DataBase_dataSet64x8x4_130dB_0129201820.npy:** core dataset for "limited area" scenario consist of CSI, RSSI, near optimal HSHO solutions. You can find it [here](https://drive.google.com/drive/folders/1I07LB--sRGPCgWl6Ci_VeveKSzeeQyKK).
 
 It is the core dataset with 1e6 samples. It consist of RSSI, channel.
 
