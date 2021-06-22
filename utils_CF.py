@@ -65,10 +65,7 @@ class Initialization_Model_Params(object):
         self.dev_id = device_ids
 
     def Data_Load(self):
-        if self.SSB_Type == 'parallel':
-            DataBase = Data_Reader(''.join((self.DB_name, '/dataSet_withRSSI_32SSB_Par.npy')), self.Us, self.Mr, self.Nrf, self.K, self.N_BS)
-        elif self.SSB_Type == 'series':
-            DataBase = Data_Reader(''.join((self.DB_name, '/dataSet_withRSSI_32SSB_Ser.npy')), self.Us, self.Mr, self.Nrf, self.K, self.N_BS)
+            DataBase = Data_Reader(''.join((self.DB_name, '/dataSet_130.npy')), self.Us, self.Mr, self.Nrf, self.K, self.N_BS)
         return DataBase  # , uniq_dis_label
 
     def Code_Read(self):
