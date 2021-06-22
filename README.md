@@ -12,7 +12,7 @@ A realistic ray-tracing channel model is considered to evaluate the proposed sol
 
 **1.DATASET.md:** all parameters related to system model such as number of users, number of antennas, etc.
 
-**2.Codebook:** designed codebook using the proposed algorithm in the paper.
+**2.Codebook:** designed codebook for each BS is available in the zip file.
 
 **3..py files:** simulation source codes
 
