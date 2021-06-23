@@ -21,7 +21,7 @@ A realistic ray-tracing channel model is considered to evaluate the proposed sol
 The dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna users. We consider BS number 4,5,8,9 is active and other information is in the paper. The dataset name should be "dataSet_130.npy". The RSSI value must be normalized and the order of data in .npy can be found in codes (import .npy).
 
 ## Requirements
-1. torch 1.8.0
+1. torch 1.8.0 (Support Complex Tensor)
 2. numpy 1.19.2
 
 ## Copyright
