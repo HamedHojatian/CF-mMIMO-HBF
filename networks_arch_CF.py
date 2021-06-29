@@ -120,30 +120,6 @@ class Net_FD_CNN(nn.Module):
         self.relu64 = nn.LeakyReLU()
         self.do64 = nn.Dropout(p_dropout)
 
-        # Linear Function
-        self.fc51 = nn.Linear(n_hidden, n_hidden)
-        self.bn51 = nn.BatchNorm1d(n_hidden)
-        self.relu51 = nn.LeakyReLU()
-        self.do51 = nn.Dropout(p_dropout)
-
-        # Linear Function
-        self.fc52 = nn.Linear(n_hidden, n_hidden)
-        self.bn52 = nn.BatchNorm1d(n_hidden)
-        self.relu52 = nn.LeakyReLU()
-        self.do52 = nn.Dropout(p_dropout)
-
-        # Linear Function
-        self.fc53 = nn.Linear(n_hidden, n_hidden)
-        self.bn53 = nn.BatchNorm1d(n_hidden)
-        self.relu53 = nn.LeakyReLU()
-        self.do53 = nn.Dropout(p_dropout)
-
-        # Linear Function
-        self.fc54 = nn.Linear(n_hidden, n_hidden)
-        self.bn54 = nn.BatchNorm1d(n_hidden)
-        self.relu54 = nn.LeakyReLU()
-        self.do54 = nn.Dropout(p_dropout)
-
         # Linear function (readout)
         self.fc61R = nn.Linear(n_hidden, n_out_Reg)
 
@@ -267,30 +243,6 @@ class Net_FD_CNN(nn.Module):
         out4 = self.bn64(out4)
         out4 = self.relu64(out4)
         out4 = self.do64(out4)
-
-        # Linear function  ****** LINEAR ******
-        out1 = self.fc51(out1)
-        out1 = self.bn51(out1)
-        out1 = self.relu51(out1)
-        out1 = self.do51(out1)
-
-        # Linear function  ****** LINEAR ******
-        out2 = self.fc52(out2)
-        out2 = self.bn52(out2)
-        out2 = self.relu52(out2)
-        out2 = self.do52(out2)
-
-        # Linear function  ****** LINEAR ******
-        out3 = self.fc53(out3)
-        out3 = self.bn53(out3)
-        out3 = self.relu53(out3)
-        out3 = self.do53(out3)
-
-        # Linear function  ****** LINEAR ******
-        out4 = self.fc54(out4)
-        out4 = self.bn54(out4)
-        out4 = self.relu54(out4)
-        out4 = self.do54(out4)
 
         # Linear function (readout)  ****** LINEAR ******
         outR = torch.cat((self.fc61R(out1), self.fc62R(out2), self.fc63R(out3), self.fc64R(out4)), dim=1)
