@@ -44,11 +44,6 @@ class Net_FD_CNN(nn.Module):
         self.bn21 = nn.BatchNorm2d(num_features=out_channel)
         self.do21 = nn.Dropout2d(p_dropout)
 
-        self.cnn31 = nn.Conv2d(in_channels=out_channel, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
-        self.relu31 = nn.LeakyReLU()
-        self.bn31 = nn.BatchNorm2d(num_features=out_channel)
-        self.do31 = nn.Dropout2d(p_dropout)
-
         self.cnn12 = nn.Conv2d(in_channels=n_in, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
         self.relu12 = nn.LeakyReLU()
         self.bn12 = nn.BatchNorm2d(num_features=out_channel)
@@ -58,11 +53,6 @@ class Net_FD_CNN(nn.Module):
         self.relu22 = nn.LeakyReLU()
         self.bn22 = nn.BatchNorm2d(num_features=out_channel)
         self.do22 = nn.Dropout2d(p_dropout)
-
-        self.cnn32 = nn.Conv2d(in_channels=out_channel, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
-        self.relu32 = nn.LeakyReLU()
-        self.bn32 = nn.BatchNorm2d(num_features=out_channel)
-        self.do32 = nn.Dropout2d(p_dropout)
 
         self.cnn13 = nn.Conv2d(in_channels=n_in, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
         self.relu13 = nn.LeakyReLU()
@@ -74,11 +64,6 @@ class Net_FD_CNN(nn.Module):
         self.bn23 = nn.BatchNorm2d(num_features=out_channel)
         self.do23 = nn.Dropout2d(p_dropout)
 
-        self.cnn33 = nn.Conv2d(in_channels=out_channel, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
-        self.relu33 = nn.LeakyReLU()
-        self.bn33 = nn.BatchNorm2d(num_features=out_channel)
-        self.do33 = nn.Dropout2d(p_dropout)
-
         self.cnn14 = nn.Conv2d(in_channels=n_in, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
         self.relu14 = nn.LeakyReLU()
         self.bn14 = nn.BatchNorm2d(num_features=out_channel)
@@ -88,11 +73,6 @@ class Net_FD_CNN(nn.Module):
         self.relu24 = nn.LeakyReLU()
         self.bn24 = nn.BatchNorm2d(num_features=out_channel)
         self.do24 = nn.Dropout2d(p_dropout)
-
-        self.cnn34 = nn.Conv2d(in_channels=out_channel, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
-        self.relu34 = nn.LeakyReLU()
-        self.bn34 = nn.BatchNorm2d(num_features=out_channel)
-        self.do34 = nn.Dropout2d(p_dropout)
 
         # Fully connected 1 (readout)
         x_new = (U + 2 * padding - kernel_s) + 1
@@ -165,11 +145,6 @@ class Net_FD_CNN(nn.Module):
         out1 = self.bn21(out1)
         out1 = self.relu21(out1)
 
-        out1 = self.cnn31(out1)
-        out1 = self.do31(out1)
-        out1 = self.bn31(out1)
-        out1 = self.relu31(out1)
-
         out2 = self.cnn12(x2)
         out2 = self.do12(out2)
         out2 = self.bn12(out2)
@@ -179,11 +154,6 @@ class Net_FD_CNN(nn.Module):
         out2 = self.do22(out2)
         out2 = self.bn22(out2)
         out2 = self.relu22(out2)
-
-        out2 = self.cnn32(out2)
-        out2 = self.do32(out2)
-        out2 = self.bn32(out2)
-        out2 = self.relu32(out2)
 
         out3 = self.cnn13(x3)
         out3 = self.do13(out3)
@@ -195,11 +165,6 @@ class Net_FD_CNN(nn.Module):
         out3 = self.bn23(out3)
         out3 = self.relu23(out3)
 
-        out3 = self.cnn33(out3)
-        out3 = self.do33(out3)
-        out3 = self.bn33(out3)
-        out3 = self.relu33(out3)
-
         out4 = self.cnn14(x4)
         out4 = self.do14(out4)
         out4 = self.bn14(out4)
@@ -209,11 +174,6 @@ class Net_FD_CNN(nn.Module):
         out4 = self.do24(out4)
         out4 = self.bn24(out4)
         out4 = self.relu24(out4)
-
-        out4 = self.cnn34(out4)
-        out4 = self.do34(out4)
-        out4 = self.bn34(out4)
-        out4 = self.relu34(out4)
 
         out1 = out1.view(out1.size(0), -1)
         out2 = out2.view(out2.size(0), -1)
@@ -277,11 +237,6 @@ class Net_PD_CNN(nn.Module):
         self.relu2 = nn.LeakyReLU()
         self.bn2 = nn.BatchNorm2d(num_features=out_channel)
         self.do2 = nn.Dropout2d(p_dropout)
-
-        self.cnn3 = nn.Conv2d(in_channels=out_channel, out_channels=out_channel, kernel_size=kernel_s, stride=1, padding=padding)
-        self.relu3 = nn.LeakyReLU()
-        self.bn3 = nn.BatchNorm2d(num_features=out_channel)
-        self.do3 = nn.Dropout2d(p_dropout)
 
         # Fully connected 1 (readout)
         x_new = (U + 2 * padding - kernel_s) + 1
@@ -362,11 +317,6 @@ class Net_PD_CNN(nn.Module):
         out = self.do2(out)
         out = self.bn2(out)
         out = self.relu2(out)
-
-        out = self.cnn3(out)
-        out = self.do3(out)
-        out = self.bn3(out)
-        out = self.relu3(out)
 
         out = out.view(out.size(0), -1)
 
