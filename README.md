@@ -1,6 +1,6 @@
-# Limited-Fronthaul Cell-Free Hybrid Beamforming with Distributed Neural Networks
+# Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning
 
-In this repository you can find the simulation source code of: "Limited-Fronthaul Cell-Free Hybrid Beamforming with Distributed Neural Networks".
+In this repository you can find the simulation source code of: "[Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning](https://128.84.4.60/abs/2106.16194)".
 
 
 ## Channel model
