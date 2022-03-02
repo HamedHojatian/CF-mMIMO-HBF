@@ -25,7 +25,7 @@ The dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna
 2. numpy 1.19.2
 
 ## Copyright
-Feel free to use this code as a starting point for your own research project. If you do, we kindly ask that you cite the following paper: "Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning](<https://128.84.4.60/abs/2106.16194>)".
+Feel free to use this code as a starting point for your own research project. If you do, we kindly ask that you cite the following paper: "[Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning](<https://128.84.4.60/abs/2106.16194>)".
 
 ```
 @misc{hojatian2021decentralized,
