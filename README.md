@@ -28,13 +28,15 @@ The dataset where 4 APs with 64 antenna and 8 RF chains serving 4 single antenna
 Feel free to use this code as a starting point for your own research project. If you do, we kindly ask that you cite the following paper: "[Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning](<https://128.84.4.60/abs/2106.16194>)".
 
 ```
-@misc{hojatian2021decentralized,
-      title={Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning}, 
-      author={Hamed Hojatian and Jeremy Nadal and Jean-Francois Frigon and Francois Leduc-Primeau},
-      year={2021},
-      eprint={2106.16194},
-      archivePrefix={arXiv},
-      primaryClass={eess.SP}
-}
+@ARTICLE{9729183,
+  author={Hojatian, Hamed and Nadal, Jérémy and Frigon, Jean-François and Leduc-Primeau, François},
+  journal={IEEE Communications Letters}, 
+  title={Decentralized Beamforming for Cell-Free Massive MIMO with Unsupervised Learning}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/LCOMM.2022.3157161}}
+
 ```
 Copyright (C): GNU General Public License v3.0 or later
